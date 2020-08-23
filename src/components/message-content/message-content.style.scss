@@ -1,0 +1,28 @@
+
+.message-content {
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    overflow: auto;
+    .message {
+        width: 70%;
+        background-color: lightblue;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid black;
+    }
+
+    .message.own {
+        border-bottom-left-radius: 0px;
+        background-color: lightgray;
+    }
+
+    .message.not-own {
+        border-bottom-right-radius: 0px;
+        align-self: flex-end;
+    }
+}
